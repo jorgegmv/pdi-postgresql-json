@@ -1,0 +1,7221 @@
+<transformation>
+  <info>
+    <name>Migra-religiões-p1</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/Transformations/Religiões</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>9999999</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017/12/28 15:04:37.949</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/01/16 07:51:26.261</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>PostgreSQL-EP</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>academico90_ep</database>
+    <port>5432</port>
+    <username>academico</username>
+    <password>Encrypted 2be98afc86aa7f285a818aa75d39bacd5</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PostgreSQL-MS</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>academico90_ms</database>
+    <port>5432</port>
+    <username>academico</username>
+    <password>Encrypted 2be98afc86aa7f285a818aa75d39bacd5</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PostgreSQL-Postgres</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>postgres</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Adiciona campos</from>
+      <to>Inicializa campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Inicializa campos</from>
+      <to>Seta maiúsculo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 14</from>
+      <to>Sequencial</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sequencial</from>
+      <to>Aguarda</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seta maiúsculo</from>
+      <to>Ajusta campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Martinho Stein</from>
+      <to>Seleciona campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Erwin Prade</from>
+      <to>Seleciona campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Mauricio Germer</from>
+      <to>Remove campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos</from>
+      <to>Seleciona campos 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 2</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Mauricio Germer</from>
+      <to>Remove campos 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 2</from>
+      <to>Seleciona campos 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Mauricio Germer</from>
+      <to>Remove campos 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 3</from>
+      <to>Seleciona campos 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 3</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 4</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 4</from>
+      <to>Seleciona campos 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 5</from>
+      <to>Seleciona campos 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 6</from>
+      <to>Seleciona campos 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Nestor Margarida</from>
+      <to>Remove campos 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Nestor Margarida</from>
+      <to>Remove campos 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Nestor Margarida</from>
+      <to>Remove campos 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 5</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 6</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 7</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 7</from>
+      <to>Seleciona campos 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 8</from>
+      <to>Seleciona campos 9</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 9</from>
+      <to>Seleciona campos 10</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões São Roque</from>
+      <to>Remove campos 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões São Roque</from>
+      <to>Remove campos 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões São Roque</from>
+      <to>Remove campos 9</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 8</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 9</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordena</from>
+      <to>Adiciona campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 10</from>
+      <to>Seleciona campos 11</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 11</from>
+      <to>Seleciona campos 12</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos 12</from>
+      <to>Seleciona campos 13</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Tiroleses</from>
+      <to>Remove campos 10</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Tiroleses</from>
+      <to>Remove campos 11</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta religiões Tiroleses</from>
+      <to>Remove campos 12</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 10</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 11</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 12</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos 13</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Aguarda</from>
+      <to>Salva religiões</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ajusta campos</from>
+      <to>Registro nulo?</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Registro nulo?</from>
+      <to>Padroniza religiões</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Registro nulo?</from>
+      <to>Descarta</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Registro únicos</from>
+      <to>Seleciona campos 14</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Padroniza religiões</from>
+      <to>Registro únicos</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Adiciona campos</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>religiao_novo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Aguarda</name>
+    <type>BlockUntilStepsFinish</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <steps>
+      <step>
+        <name>Sequencial</name>
+        <CopyNr>0</CopyNr>
+      </step>
+    </steps>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>848</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ajusta campos</name>
+    <type>ReplaceString</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÁÀÂÃ]</replace_string>
+        <replace_by_string>A</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÉÈÊË]</replace_string>
+        <replace_by_string>E</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÍÌÎ]</replace_string>
+        <replace_by_string>I</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÓÒÔÕÖ]</replace_string>
+        <replace_by_string>O</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÚÙÛÜ]</replace_string>
+        <replace_by_string>U</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[Ç]</replace_string>
+        <replace_by_string>C</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>/[^a-zA-Z \-]/g</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[£ÆƑÃŠ‡‰�ªº¢¡`´“]</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta religiões Erwin Prade</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL-EP</connection>
+    <sql>SELECT DISTINCT
+       TRIM(UPPER(ca6_relpai)) AS ca6_rel
+FROM public.ca6_alun
+WHERE TRIM(ca6_relpai) IS NOT NULL
+  AND ca6_relpai &lt;&gt; ''
+UNION
+SELECT DISTINCT
+       TRIM(UPPER(ca6_relmae)) AS ca6_rel
+FROM public.ca6_alun
+WHERE TRIM(ca6_relmae) IS NOT NULL
+  AND ca6_relmae &lt;&gt; ''
+UNION
+SELECT DISTINCT
+       TRIM(UPPER(ca6_relout)) AS ca6_rel
+FROM public.ca6_alun
+WHERE TRIM(ca6_relout) IS NOT NULL
+  AND ca6_relout &lt;&gt; ''
+ORDER BY 1;</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>Y</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta religiões Martinho Stein</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL-MS</connection>
+    <sql>SELECT DISTINCT
+       TRIM(UPPER(ca6_relpai)) AS ca6_rel
+FROM public.ca6_alun
+WHERE TRIM(ca6_relpai) IS NOT NULL
+  AND ca6_relpai &lt;&gt; ''
+UNION
+SELECT DISTINCT
+       TRIM(UPPER(ca6_relmae)) AS ca6_rel
+FROM public.ca6_alun
+WHERE TRIM(ca6_relmae) IS NOT NULL
+  AND ca6_relmae &lt;&gt; ''
+UNION
+SELECT DISTINCT
+       TRIM(UPPER(ca6_relout)) AS ca6_rel
+FROM public.ca6_alun
+WHERE TRIM(ca6_relout) IS NOT NULL
+  AND ca6_relout &lt;&gt; ''
+ORDER BY 1;</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>Y</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta religiões Mauricio Germer</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Mauricio Germer\ca6_alun.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca6_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_comple</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_distan</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtanas</name>
+        <type>Date</type>
+        <format>MM/dd/yyyy</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>6</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estciv</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone2</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nompai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_propai</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renpai</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_inspai</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nommae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_promae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renmae</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insmae</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nomout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_proout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renout</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insout</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_afiout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdirm</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_morpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_filesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdfil</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtamat</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_irmesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_celula</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_e_mail</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_situac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_arqfot</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_ultesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_turpre</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_anoatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_graatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_seratu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_repser</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_indtra</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_curatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta religiões Nestor Margarida</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Nestor Margarida\ca6_alun.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca6_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_comple</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_distan</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtanas</name>
+        <type>Date</type>
+        <format>MM/dd/yyyy</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>6</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estciv</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone2</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nompai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_propai</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renpai</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_inspai</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nommae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_promae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renmae</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insmae</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nomout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_proout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renout</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insout</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_afiout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdirm</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_morpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_filesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdfil</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtamat</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_irmesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_celula</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_e_mail</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_situac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_arqfot</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_ultesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_turpre</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_anoatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_graatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_seratu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_repser</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_indtra</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_curatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta religiões São Roque</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Sao Roque\ca6_alun.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca6_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_comple</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_distan</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtanas</name>
+        <type>Date</type>
+        <format>MM/dd/yyyy</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>6</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estciv</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone2</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nompai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_propai</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renpai</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_inspai</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nommae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_promae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renmae</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insmae</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nomout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_proout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renout</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insout</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_afiout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdirm</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_morpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_filesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdfil</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtamat</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_irmesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_celula</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_e_mail</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_situac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_arqfot</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_ultesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_turpre</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_anoatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_graatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_seratu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_repser</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_indtra</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_curatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta religiões Tiroleses</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Tiroleses\ca6_alun.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca6_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_comple</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_distan</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtanas</name>
+        <type>Date</type>
+        <format>MM/dd/yyyy</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_cidnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>6</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estnas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_estciv</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_fone2</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nompai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_propai</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renpai</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_inspai</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nommae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_promae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renmae</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insmae</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relmae</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_nomout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>29</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_natout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtnout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_proout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_renout</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_insout</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_relout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_afiout</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdirm</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_morpai</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_filesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_qtdfil</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_dtamat</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_irmesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_celula</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_e_mail</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_situac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_arqfot</name>
+        <type>Boolean</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_ultesc</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_turpre</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_anoatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_graatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_seratu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca6_repser</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_indtra</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>R$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ca6_curatu</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Descarta</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Inicializa campos</name>
+    <type>ReplaceString</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string />
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string>ca6_rel</replace_field_by_string>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordena</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>ca6_rel</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Padroniza religiões</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
+{
+  Object[] r = getRow();
+  
+  if (r == null) {
+    setOutputDone();
+    return false;
+  }
+  
+  Object[] outputRow = createOutputRow(r, data.outputRowMeta.size());
+
+  String ca6_rel = get(Fields.In, "ca6_rel").getString(r);
+  String religiao_novo = get(Fields.In, "religiao_novo").getString(r);
+  
+  if (religiao_novo.equals("3820890") || religiao_novo.equals("3824111") ||
+      religiao_novo.equals("3824607") || religiao_novo.equals("3826324") ||
+      religiao_novo.equals("-") || religiao_novo.equals("AUX. ESCRI") ||
+      religiao_novo.equals("NAO DECL") || religiao_novo.equals("NAO DECL.") ||
+      religiao_novo.equals("NAO DECLAR") || religiao_novo.equals("NAO INFOR.") ||
+      religiao_novo.equals("NAO TEM") || religiao_novo.equals("NENHUMA") ||
+      religiao_novo.equals("PADRASTO")) {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "NAO INFORMADA");
+  }
+  else if (religiao_novo.equals("ATEU")) {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "SEM RELIGIAO");
+  }
+  else if (religiao_novo.equals("BUDISTA")) {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "BUDISTA");
+  }
+  else if (religiao_novo.equals("ESPARITA") || religiao_novo.equals("ESPIRITA") ||
+            religiao_novo.equals("KARDECISTA") || religiao_novo.equals("KARDESISTA")) {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "ESPIRITA");
+  }
+  else if (religiao_novo.equals("AD. 7 DIA") || religiao_novo.equals("ADV. 07") ||
+            religiao_novo.equals("ADV. 7 DIA") || religiao_novo.equals("ADVENSTIS.") ||
+            religiao_novo.equals("ADVENT.") || religiao_novo.equals("ADVENT.7") ||
+            religiao_novo.equals("ADVENTISTA") || religiao_novo.equals("ADVESTISTA") ||
+            religiao_novo.equals("AGNOSTICO") || religiao_novo.equals("ASS DE DES") ||
+            religiao_novo.equals("ASS DEUA") || religiao_novo.equals("ASS DEUS") ||
+            religiao_novo.equals("ASS. DEUS") || religiao_novo.equals("ASS.DEUS") ||
+            religiao_novo.equals("ASSDE DEUS") || religiao_novo.equals("ASSDEUS") ||
+            religiao_novo.equals("ASSE DEUS") ||  religiao_novo.equals("ASSEM DEUS") ||
+            religiao_novo.equals("ASSEMB DES") || religiao_novo.equals("ASSEMB") ||
+            religiao_novo.equals("ASSEMBLEIA") || religiao_novo.equals("ASSM DEUS") ||
+            religiao_novo.equals("BATISTA EV") || religiao_novo.equals("BATISTA") ||
+            religiao_novo.equals("C.S.CRISTO") || religiao_novo.equals("COMU.VIDA") ||
+            religiao_novo.equals("COMUN.VIDA") || religiao_novo.equals("CONG CRIST") ||
+            religiao_novo.equals("CONG.CRISA") || religiao_novo.equals("CONGCRISTA") ||
+            religiao_novo.equals("CONGR.CRIA") || religiao_novo.equals("CONGREG") ||
+            religiao_novo.equals("CONGREGACA") || religiao_novo.equals("CRENTE") ||
+            religiao_novo.equals("CRENTES") || religiao_novo.equals("CRISTA") ||
+            religiao_novo.equals("CRISTAO") || religiao_novo.equals("CRISTAOS") ||
+            religiao_novo.equals("DA GRACA") || religiao_novo.equals("DEUS E AMO") ||
+            religiao_novo.equals("DEUS E AMR") || religiao_novo.equals("DEUSEAMOR") ||
+            religiao_novo.equals("E.LIVRE") || religiao_novo.equals("E.LUTERANA") ||
+            religiao_novo.equals("ENAG") || religiao_novo.equals("ENV.") ||
+            religiao_novo.equals("ENVANG.") || religiao_novo.equals("ENVANGALI") ||
+            religiao_novo.equals("ENVANGALIA") || religiao_novo.equals("ENVEG.") ||
+            religiao_novo.equals("EV") || religiao_novo.equals("EV. CRISTA") ||
+            religiao_novo.equals("EV.") | religiao_novo.equals("EV.PENTEC.") ||
+            religiao_novo.equals("EV.VIDA N") || religiao_novo.equals("EVA") ||
+            religiao_novo.equals("EVAG") || religiao_novo.equals("EVAG.") ||
+            religiao_novo.equals("EVAGALICA") || religiao_novo.equals("EVAGELICO") ||
+            religiao_novo.equals("EVAMG.") || religiao_novo.equals("EVAN QUADR") ||
+            religiao_novo.equals("EVAN. LUT.") || religiao_novo.equals("EVAN.") ||
+            religiao_novo.equals("EVAN.LUT.") || religiao_novo.equals("EVANALICA") ||
+            religiao_novo.equals("EVANDELICO") || religiao_novo.equals("EVANF.") ||
+            religiao_novo.equals("EVANG") || religiao_novo.equals("EVANG,") ||
+            religiao_novo.equals("EVANG. LU.") || religiao_novo.equals("EVANG. LUT") ||
+            religiao_novo.equals("EVANG. VN") || religiao_novo.equals("EVANG.") ||
+            religiao_novo.equals("EVANG..") || religiao_novo.equals("EVANG.ABA") ||
+            religiao_novo.equals("EVANG.LUT") || religiao_novo.equals("EVANG.LUT.") ||
+            religiao_novo.equals("EVANG.PEN.") || religiao_novo.equals("EVANG.PROT") ||
+            religiao_novo.equals("EVANGAL.") || religiao_novo.equals("EVANGALCO") ||
+            religiao_novo.equals("EVANGALICA") || religiao_novo.equals("EVANGALICO") ||
+            religiao_novo.equals("EVANGECICA") || religiao_novo.equals("EVANGELIA") ||
+            religiao_novo.equals("EVANGELIC.") || religiao_novo.equals("EVANGELICA") ||
+            religiao_novo.equals("EVANGELICO") || religiao_novo.equals("EVANGELICS") ||
+            religiao_novo.equals("EVAV QUADA") || religiao_novo.equals("GEOVA") ||
+            religiao_novo.equals("IEL") || religiao_novo.equals("IRMAO ME") ||
+            religiao_novo.equals("IRMAOS ME") || religiao_novo.equals("IRMAS MER.") ||
+            religiao_novo.equals("JEOVA") || religiao_novo.equals("KADERCISTA") ||
+            religiao_novo.equals("LETERANA") || religiao_novo.equals("LUETRANA") ||
+            religiao_novo.equals("LURTERANA") | religiao_novo.equals("LUT") ||
+            religiao_novo.equals("LUTER.") || religiao_novo.equals("LUTERAN") ||
+            religiao_novo.equals("LUTERANA") || religiao_novo.equals("LUTERANO") ||
+            religiao_novo.equals("LUTERANOS") || religiao_novo.equals("LUTERNA") ||
+            religiao_novo.equals("LUTRANO") || religiao_novo.equals("MARANATA") ||
+            religiao_novo.equals("MENONITAS") || religiao_novo.equals("MIN.RESTAU") ||
+            religiao_novo.equals("MINIST RET") || religiao_novo.equals("MINIST. RR") ||
+            religiao_novo.equals("MINIST. RT") || religiao_novo.equals("MISSAO EVA") ||
+            religiao_novo.equals("MORMON") || religiao_novo.equals("N DECLAR.") ||
+            religiao_novo.equals("OCRAINO") || religiao_novo.equals("PORTESTANT") ||
+            religiao_novo.equals("PRESBIT.") || religiao_novo.equals("PRESBITERA") ||
+            religiao_novo.equals("PROT") || religiao_novo.equals("PROT.") ||
+            religiao_novo.equals("PROTES") || religiao_novo.equals("PROTES.") ||
+            religiao_novo.equals("PROTESNTE") || religiao_novo.equals("PROTEST") ||
+            religiao_novo.equals("PROTEST.") || religiao_novo.equals("PROTESTAN") ||
+            religiao_novo.equals("PROTESTAN.") || religiao_novo.equals("PROTESTANE") ||
+            religiao_novo.equals("PROTESTANT") || religiao_novo.equals("PROTESTNTE") ||
+            religiao_novo.equals("PROTS.") || religiao_novo.equals("QUAD.") ||
+            religiao_novo.equals("QUADRAN") || religiao_novo.equals("QUADRANG") ||
+            religiao_novo.equals("QUADRANG.") || religiao_novo.equals("QUADRANGUL") ||
+            religiao_novo.equals("QUADRANGUR") || religiao_novo.equals("QUADRNAG.") ||
+            religiao_novo.equals("QUADRNG.") || religiao_novo.equals("REMANESC") ||
+            religiao_novo.equals("REMANESCE") || religiao_novo.equals("REMANESCEE") ||
+            religiao_novo.equals("RENASCER") || religiao_novo.equals("RESTAURAC~") ||
+            religiao_novo.equals("RESTAURACA") || religiao_novo.equals("RESTAURACO") ||
+            religiao_novo.equals("SA DOUTRIA") || religiao_novo.equals("SAN DOUTRA") ||
+            religiao_novo.equals("SANTAS MIS") || religiao_novo.equals("SEM RELIG.") ||
+            religiao_novo.equals("STA MISSOS") || religiao_novo.equals("STAS MISSS") ||
+            religiao_novo.equals("STASMISS") || religiao_novo.equals("STASMISSO") ||
+            religiao_novo.equals("STASMISSOS") || religiao_novo.equals("T. GEOVA") ||
+            religiao_novo.equals("T. JEOVA") || religiao_novo.equals("T.J.") ||
+            religiao_novo.equals("T.JEOVA") ||  religiao_novo.equals("TES.JEOAVA") ||
+            religiao_novo.equals("TES.JEOVA") || religiao_novo.equals("TEST JEO") ||
+            religiao_novo.equals("TEST JEOVA") || religiao_novo.equals("TEST") ||
+            religiao_novo.equals("TEST,JEOVA") || religiao_novo.equals("TEST. JEO.") ||
+            religiao_novo.equals("TEST. JEOA") || religiao_novo.equals("TEST. JEOV") ||
+            religiao_novo.equals("TEST. JEVA") || religiao_novo.equals("TEST.") ||
+            religiao_novo.equals("TEST.JEO") || religiao_novo.equals("TEST.JEOVA") ||
+            religiao_novo.equals("TESTEMUNHA") || religiao_novo.equals("TESTJEOVA") ||
+            religiao_novo.equals("TEWST.JEOA") || religiao_novo.equals("UNIVERSAL") ||
+            religiao_novo.equals("VIDA NOVA") || religiao_novo.equals("CASA DO MU")) {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "PROTESTANTE");
+  }
+  else if (religiao_novo.equals("CTALICO") || religiao_novo.equals("CAALICA") ||
+            religiao_novo.equals("CAATOLICA") || religiao_novo.equals("CAROLICA") ||
+            religiao_novo.equals("CAROLICO") ||  religiao_novo.equals("CARTOLICA") ||
+            religiao_novo.equals("CASTALICA") || religiao_novo.equals("CAT") ||
+            religiao_novo.equals("CAT.") || religiao_novo.equals("CAT[OLICA") ||
+            religiao_novo.equals("CAT[OLICO") || religiao_novo.equals("CATA[OLICA") ||
+            religiao_novo.equals("CATALICA") || religiao_novo.equals("CATALICO") ||
+            religiao_novo.equals("CATALICO]") || religiao_novo.equals("CATALICOO") ||
+            religiao_novo.equals("CATILICA") || religiao_novo.equals("CATLOICA") ||
+            religiao_novo.equals("CATOICA") || religiao_novo.equals("CATOL.") ||
+            religiao_novo.equals("CATOLIA") || religiao_novo.equals("CATOLICA") ||
+            religiao_novo.equals("CATOLICA,") || religiao_novo.equals("CATOLICO") ||
+            religiao_novo.equals("CATOLICOS") || religiao_novo.equals("CATOLICP") ||
+            religiao_novo.equals("CATOLIGA") || religiao_novo.equals("CATOLINA") ||
+            religiao_novo.equals("CATOLIUCA") || religiao_novo.equals("CATOLLICA") ||
+            religiao_novo.equals("CATOLOCA") || religiao_novo.equals("CATPLICA") ||
+            religiao_novo.equals("CATPOLICA") || religiao_novo.equals("CATROLICO") ||
+            religiao_novo.equals("CAYALICO") || religiao_novo.equals("CDATOLICA")) {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "CATOLICA");
+  }
+  else {
+    get(Fields.Out, "religiao_novo").setValue(outputRow, "OUTRA");
+  }
+  
+  putRow(data.outputRowMeta, outputRow);
+  
+  return true;
+}
+</class_source>
+      </definition>
+    </definitions>
+    <fields>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps>
+      <target_step>
+        <step_tag>1</step_tag>
+        <step_name>Seleciona campos 3</step_name>
+        <step_description />
+      </target_step>
+    </target_steps>
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>688</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro nulo?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Descarta</send_true_to>
+    <send_false_to>Padroniza religiões</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <conditions>
+          <condition>
+            <negated>N</negated>
+            <leftvalue>religiao_novo</leftvalue>
+            <function>IS NULL</function>
+            <rightvalue />
+          </condition>
+          <condition>
+            <negated>N</negated>
+            <operator>OR</operator>
+            <leftvalue>religiao_novo</leftvalue>
+            <function>=</function>
+            <rightvalue />
+            <value>
+              <name>constant</name>
+              <type>String</type>
+              <text />
+              <length>-1</length>
+              <precision>-1</precision>
+              <isnull>Y</isnull>
+              <mask />
+            </value>
+          </condition>
+        </conditions>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 10</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 11</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 12</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>896</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 3</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 4</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 5</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 6</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 7</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>576</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 8</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_relout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos 9</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca6_codigo</name>
+      </remove>
+      <remove>
+        <name>ca6_nome</name>
+      </remove>
+      <remove>
+        <name>ca6_endere</name>
+      </remove>
+      <remove>
+        <name>ca6_comple</name>
+      </remove>
+      <remove>
+        <name>ca6_bairro</name>
+      </remove>
+      <remove>
+        <name>ca6_cep</name>
+      </remove>
+      <remove>
+        <name>ca6_cidade</name>
+      </remove>
+      <remove>
+        <name>ca6_estado</name>
+      </remove>
+      <remove>
+        <name>ca6_distan</name>
+      </remove>
+      <remove>
+        <name>ca6_sexo</name>
+      </remove>
+      <remove>
+        <name>ca6_dtanas</name>
+      </remove>
+      <remove>
+        <name>ca6_cidnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estnas</name>
+      </remove>
+      <remove>
+        <name>ca6_estciv</name>
+      </remove>
+      <remove>
+        <name>ca6_fone1</name>
+      </remove>
+      <remove>
+        <name>ca6_fone2</name>
+      </remove>
+      <remove>
+        <name>ca6_nompai</name>
+      </remove>
+      <remove>
+        <name>ca6_natpai</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnpai</name>
+      </remove>
+      <remove>
+        <name>ca6_propai</name>
+      </remove>
+      <remove>
+        <name>ca6_renpai</name>
+      </remove>
+      <remove>
+        <name>ca6_inspai</name>
+      </remove>
+      <remove>
+        <name>ca6_relpai</name>
+      </remove>
+      <remove>
+        <name>ca6_nommae</name>
+      </remove>
+      <remove>
+        <name>ca6_natmae</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnmae</name>
+      </remove>
+      <remove>
+        <name>ca6_promae</name>
+      </remove>
+      <remove>
+        <name>ca6_renmae</name>
+      </remove>
+      <remove>
+        <name>ca6_insmae</name>
+      </remove>
+      <remove>
+        <name>ca6_relmae</name>
+      </remove>
+      <remove>
+        <name>ca6_nomout</name>
+      </remove>
+      <remove>
+        <name>ca6_natout</name>
+      </remove>
+      <remove>
+        <name>ca6_dtnout</name>
+      </remove>
+      <remove>
+        <name>ca6_proout</name>
+      </remove>
+      <remove>
+        <name>ca6_renout</name>
+      </remove>
+      <remove>
+        <name>ca6_insout</name>
+      </remove>
+      <remove>
+        <name>ca6_afiout</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdirm</name>
+      </remove>
+      <remove>
+        <name>ca6_morpai</name>
+      </remove>
+      <remove>
+        <name>ca6_filesc</name>
+      </remove>
+      <remove>
+        <name>ca6_qtdfil</name>
+      </remove>
+      <remove>
+        <name>ca6_dtamat</name>
+      </remove>
+      <remove>
+        <name>ca6_irmesc</name>
+      </remove>
+      <remove>
+        <name>ca6_celula</name>
+      </remove>
+      <remove>
+        <name>ca6_e_mail</name>
+      </remove>
+      <remove>
+        <name>ca6_situac</name>
+      </remove>
+      <remove>
+        <name>ca6_arqfot</name>
+      </remove>
+      <remove>
+        <name>ca6_ultesc</name>
+      </remove>
+      <remove>
+        <name>ca6_turpre</name>
+      </remove>
+      <remove>
+        <name>ca6_anoatu</name>
+      </remove>
+      <remove>
+        <name>ca6_graatu</name>
+      </remove>
+      <remove>
+        <name>ca6_seratu</name>
+      </remove>
+      <remove>
+        <name>ca6_repser</name>
+      </remove>
+      <remove>
+        <name>ca6_indtra</name>
+      </remove>
+      <remove>
+        <name>ca6_curatu</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>704</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Salva religiões</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL-Postgres</connection>
+    <schema />
+    <table>conv_religioes</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id</column_name>
+        <stream_name>id</stream_name>
+      </field>
+      <field>
+        <column_name>religiao_anterior</column_name>
+        <stream_name>ca6_rel</stream_name>
+      </field>
+      <field>
+        <column_name>religiao_novo</column_name>
+        <stream_name>religiao_novo</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>848</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_rel</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 10</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relout</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>704</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 11</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relpai</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 12</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relmae</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 13</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relout</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>896</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 14</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_rel</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>religiao_novo</name>
+        <rename>religiao_novo</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>848</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relpai</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 3</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relmae</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 4</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relout</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 5</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relpai</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 6</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relmae</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 7</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relout</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 8</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relpai</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>576</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos 9</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca6_relmae</name>
+        <rename>ca6_rel</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sequencial</name>
+    <type>Sequence</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection />
+    <schema />
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name>seq</counter_name>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>848</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seta maiúsculo</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>ca6_rel</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>religiao_novo</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro únicos</name>
+    <type>Unique</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field />
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description />
+    <fields>
+      <field>
+        <name>ca6_rel</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+      <field>
+        <name>religiao_novo</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

@@ -1,0 +1,3085 @@
+<transformation>
+  <info>
+    <name>Salva-funcionários-dw-p2</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/Transformations/Funcionários</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>9999999</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/01/17 08:59:28.743</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/01/17 11:41:25.416</modified_date>
+    <key_for_session_key />
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>PostgreSQL-Postgres</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>postgres</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Aguarda</from>
+      <to>Salva funcionários</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Fórmula</from>
+      <to>Ajusta data</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Quebra data</from>
+      <to>Fórmula</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sequencial</from>
+      <to>Aguarda</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordena</from>
+      <to>Registros únicos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta funcionários Mauricio Germer</from>
+      <to>Remove campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta funcionários Nestor Margarida</from>
+      <to>Remove campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta funcionários São Roque</from>
+      <to>Remove campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Consulta funcionários Tiroleses</from>
+      <to>Remove campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove campos</from>
+      <to>Seleciona campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seleciona campos</from>
+      <to>Seta maiúsculo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seta maiúsculo</from>
+      <to>Ajusta campos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ajusta campos</from>
+      <to>Ajusta sexo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ajusta sexo</from>
+      <to>Quebra data</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ajusta data</from>
+      <to>Padroniza funcionários</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Padroniza funcionários</from>
+      <to>Ordena</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Registros únicos</from>
+      <to>Verifica cadastro</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Verifica cadastro</from>
+      <to>Já inserido?</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Já inserido?</from>
+      <to>Obtém outros dados</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Já inserido?</from>
+      <to>Descarta</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Obtém outros dados</from>
+      <to>Seta orgão emissor rg</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seta orgão emissor rg</from>
+      <to>Sequencial</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Aguarda</name>
+    <type>BlockUntilStepsFinish</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <steps>
+      <step>
+        <name>Sequencial</name>
+        <CopyNr>0</CopyNr>
+      </step>
+    </steps>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>608</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ajusta data</name>
+    <type>NullIf</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>ca1_dtanas</name>
+        <value>nulo</value>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1056</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ajusta sexo</name>
+    <type>ValueMapper</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <field_to_use>ca1_sexo</field_to_use>
+    <target_field />
+    <non_match_default />
+    <fields>
+      <field>
+        <source_value>M</source_value>
+        <target_value>MASCULINO</target_value>
+      </field>
+      <field>
+        <source_value>F</source_value>
+        <target_value>FEMININO</target_value>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta funcionários Mauricio Germer</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Mauricio Germer\ca1_prof.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca1_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_codcep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrotel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrocel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_e_mail</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_dtanas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_formac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_curso</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_pestra</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_usanm1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sommed</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta funcionários Nestor Margarida</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Nestor Margarida\ca1_prof.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca1_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_codcep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrotel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrocel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_e_mail</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_dtanas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_formac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_curso</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_pestra</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_usanm1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sommed</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta funcionários São Roque</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Sao Roque\ca1_prof.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca1_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_codcep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrotel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrocel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_e_mail</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_dtanas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_formac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_curso</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_pestra</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_usanm1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sommed</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Consulta funcionários Tiroleses</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>C:\Bases\Timbo\Exportados\Tiroleses\ca1_prof.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>ca1_codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nome</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_endere</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_bairro</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_codcep</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_cidade</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_estado</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrotel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_nrocel</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_e_mail</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_dtanas</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sexo</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_formac</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_curso</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_pestra</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_usanm1</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ca1_sommed</name>
+        <type>String</type>
+        <format />
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Fórmula</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>ca1_dtanas</field_name>
+      <formula_string>IF([ano] &lt;&gt; "";[ano]&amp;"-"&amp;[mes]&amp;"-"&amp;[dia];"nulo")</formula_string>
+      <value_type>String</value_type>
+      <value_length>10</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Obtém outros dados</name>
+    <type>DBLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL-Postgres</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema />
+      <table>conv_contratos_funcionarios_dw</table>
+      <orderby />
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ca1_nome</name>
+        <field>nome</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>estado_civil</name>
+        <rename>estado_civil</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>rg</name>
+        <rename>rg</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>cpf</name>
+        <rename>cpf</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>endereco</name>
+        <rename>endereco</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>bairro</name>
+        <rename>bairro</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>cidade</name>
+        <rename>cidade</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordena</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>ca1_nome</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Padroniza funcionários</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
+{
+  Object[] r = getRow();
+  
+  if (r == null) {
+    setOutputDone();
+    return false;
+  }
+  
+  Object[] outputRow = createOutputRow(r, data.outputRowMeta.size());
+  
+  String ca1_nome = get(Fields.In, "ca1_nome").getString(r);
+  String ca1_codcep = get(Fields.In, "ca1_codcep").getString(r);
+  String ca1_nrotel = get(Fields.In, "ca1_nrotel").getString(r);
+  String ca1_nrocel = get(Fields.In, "ca1_nrocel").getString(r);
+  String ca1_e_mail = get(Fields.In, "ca1_e_mail").getString(r);
+  String ca1_sexo = get(Fields.In, "ca1_sexo").getString(r);
+  String ca1_dtanas = get(Fields.In, "ca1_dtanas").getString(r);
+ 
+  if (ca1_dtanas != null &amp;&amp; ca1_dtanas.length() > 0) {
+    String[] data = ca1_dtanas.split("-");
+    int ano = Integer.parseInt(data[0]);
+  
+    if (ano &lt; 1908 || ano > 2017) {
+      get(Fields.Out, "ca1_dtanas").setValue(outputRow, "1908-01-01");
+    }
+  }
+  
+  if (ca1_dtanas == null || ca1_dtanas.length() == 0) {
+    get(Fields.Out, "ca1_dtanas").setValue(outputRow, "1908-01-01");
+  }
+  
+  if (ca1_nrotel == null || ca1_nrotel.length() == 0) {
+    get(Fields.Out, "ca1_nrotel").setValue(outputRow, null);
+  }
+  else if (ca1_nrotel.length() == 8) {
+    get(Fields.Out, "ca1_nrotel").setValue(outputRow, "47" + ca1_nrotel);
+  }
+  else if (ca1_nrotel.length() &lt; 10) {
+    get(Fields.Out, "ca1_nrotel").setValue(outputRow, null);
+  }
+  
+  if (ca1_nrocel == null || ca1_nrocel.length() == 0) {
+    get(Fields.Out, "ca1_nrocel").setValue(outputRow, null);
+  }
+  else if (ca1_nrocel.length() == 8) {
+    get(Fields.Out, "ca1_nrocel").setValue(outputRow, "479" + ca1_nrocel);
+  }
+  else if (ca1_nrocel.length() == 9) {
+    get(Fields.Out, "ca1_nrocel").setValue(outputRow, "47" + ca1_nrocel);
+  }
+  else if (ca1_nrocel.length() &lt; 10) {
+    get(Fields.Out, "ca1_nrocel").setValue(outputRow, null);
+  }
+  
+  if (ca1_e_mail != null &amp;&amp; ca1_e_mail.length() > 0) {
+    String regex = "^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$";
+    Pattern pattern = Pattern.compile(regex);
+    String email = ca1_e_mail;
+    Matcher matcher = pattern.matcher(email);
+    if (matcher.matches() == false) {
+      get(Fields.Out, "ca1_e_mail").setValue(outputRow, null);
+    }
+  }
+  
+  if (ca1_nome.equals("ADEMIR MANFRINI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ADEMIR LUIZ MANFRINI");
+  }
+  else if (ca1_nome.equals("ADRIANA BEATRIZ PACHER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ADRIANA BEATRIZ PACHER RAACH");
+  }
+  else if (ca1_nome.equals("ALESSANDRA PETERS")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ALESSANDRA PETERS BERTRAM");
+  }
+  else if (ca1_nome.equals("ANA CLAUDIA SCHUSTER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANA CLAUDIA SCHUSTER ARAUJO");
+  }
+  else if (ca1_nome.equals("ANALU LENZI KLEINSCHIMIDT")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANALU LENZI KLEINSCHMIDT");
+  }
+  else if (ca1_nome.equals("ANDERSON CATAFESTA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANDERSON LUIZ CATAFESTA");
+  }
+  else if (ca1_nome.equals("ANDREA STOLF")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANDREA STOLF SCHWARTZ");
+  }
+  else if (ca1_nome.equals("ANDREIA ZATELLI FIAMONCINI") || ca1_nome.equals("ANDREA FIAMONCINI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANDREIA SHEILA ZATELLI FIAMONCINI");
+  }
+  else if (ca1_nome.equals("ANDREA STOLF")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANDRÉA STOLF SCHWARTZ");
+  }
+  else if (ca1_nome.equals("ANTONIO CESAR WONTOWSKY")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ANTONIO CESAR WANTOWSKY");
+  }
+  else if (ca1_nome.equals("ARICLEA CRISTINA KLITZKE")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ARICLEA CRISTINA KLITZKE KOEPSEL");
+  }
+  else if (ca1_nome.equals("CAMILA THAISA ALVES")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CAMILA THAISA ALVES BONA");
+  }
+  else if (ca1_nome.equals("CARINE MICHELS WOOS")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CARINE MICHELS WOSS");
+  }
+  else if (ca1_nome.equals("CARLOS AUGUSTO VOLANDRO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CARLOS AUGUSTO VALANDRO");
+  }
+  else if (ca1_nome.equals("CLAODETE S. P. GIRARDI") || ca1_nome.equals("CLAODETE S.P. GIRARDI") ||
+            ca1_nome.equals("CLAUDETE SALETE PANINI GIRARDI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CLAODETE SALETE PANINI GIRARDI");
+  }
+  else if (ca1_nome.equals("CLARA BEATRIZ P.RAMALHO DA SILVA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CLARA BEATRIZ P. RAMALHO DA SILVA");
+  }
+  else if (ca1_nome.equals("CLARICE F.T. WORMSBECKER") || ca1_nome.equals("CLARICE WOMRSBECKER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CLARICE DE FATIMA TABORDA WORMSBECKER");
+  }
+  else if (ca1_nome.equals("CLAUDIA DA SILVA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CLAUDIA DA SILVA PELLIN");
+  }
+  else if (ca1_nome.equals("CLEIDE APARECIDA  NICOLETTI PONTES")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CLEIDE APARECIDA NICOLETTI PONTES");
+  }
+  else if (ca1_nome.equals("CLADIS DALPIAZ")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CLADIS DALPIAZ DA SILVA");
+  }
+  else if (ca1_nome.equals("CRISTIANE HENKLELS HARTMANN")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CRISTIANE HENKELS HARTMANN");
+  }
+  else if (ca1_nome.equals("CRISTIANE ROBERTA BEWIAHN TOMASELLI") || ca1_nome.equals("CRISTIANE ROBERTA BEWIAN TOMASELLI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CRISTIANE ROBERTA BEWIAHN TOMASELI");
+  }
+  else if (ca1_nome.equals("CRISTINE  ANDREIA DE VARGAS FORMOLO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "CRISTINE ANDREIA DE VARGAS FORMOLO");
+  }
+  else if (ca1_nome.equals("DALILA T. PACHER CARDOSO") || ca1_nome.equals("DALILA TEREZINHA PACHER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DALILA TEREZINHA PACHER CARDOSO");
+  }
+  else if (ca1_nome.equals("DANIELLE ENKE")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DANIELLE ENKE CORNEJO");
+  }
+  else if (ca1_nome.equals("DAYANE PERINI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DAYANE PERINI SALVADOR");
+  }
+  else if (ca1_nome.equals("DEBORA C. PIRES")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DEBORA COSTA PIRES");
+  }
+  else if (ca1_nome.equals("DENISE ALESSANDRA BREHMER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DENISE ALESSANDRA BREHMER VANZUITA");
+  }
+  else if (ca1_nome.equals("DENISE CASTRO INSAURRIAGA SILVA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DENISE DE CASTRO INSAURRIAGA SILVA");
+  }
+  else if (ca1_nome.equals("DORIS MARIA MESADRI MASS")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "DORIS MARIA MESADRI MAAS");
+  }
+  else if (ca1_nome.equals("EDELBERTO HARTMANN JR")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "EDELBERTO HARTMANN JUNIOR");
+  }
+  else if (ca1_nome.equals("ELISANDRA HUEBES")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ELISANDRA HUEBES ABDALA JOSE");
+  }
+  else if (ca1_nome.equals("ELISANGELA J. DE SOUZA DO NASCIMENTO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ELISANGELA J. DE SOUSA DO NASCIMENTO");
+  }
+  else if (ca1_nome.equals("ELIZANDRA MARLISE BEBER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ELIZANDRA MARLIZE BEBER");
+  }
+  else if (ca1_nome.equals("FABIANA MACHADO  BUTZKE")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "FABIANA MACHADO BUTZKE");
+  }
+  else if (ca1_nome.equals("FABRICIO  DALCASTAGNE")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "FABRICIO DALCASTAGNE");
+  }
+  else if (ca1_nome.equals("FERNANDA DALPIAZ")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "FERNANDA DALPIAZ HENDGES");
+  }
+  else if (ca1_nome.equals("FÁTIMA DENISE DE MELO PELLIZARO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "FATIMA DENISE DE MELO PELLIZZARO");
+  }
+  else if (ca1_nome.equals("GABRIELLEN THAILA  FERREIRA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "GABRIELLEN THAILA ALVES FERREIRA");
+  }
+  else if (ca1_nome.equals("GICINARA FABRIS")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "GICINARA FALRIS");
+  }
+  else if (ca1_nome.equals("GLADIS T.LONGO BOAVENTURA") || ca1_nome.equals("GLADIS TEREZINHA BOAVENTURA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "GLADIS TEREZINHA LONGO BOAVENTURA");
+  }
+  else if (ca1_nome.equals("GRACIANA LIVIA LENZI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "GRACIANA LIVIA LENZI");
+  }
+  else if (ca1_nome.equals("GRAZIELA ROPELATTO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "GRAZIELA ROPELATO");
+  }
+  else if (ca1_nome.equals("JAIRA PRESTES PIVATTO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JAIRA PRESTES PIVATO");
+  }
+  else if (ca1_nome.equals("JANETE I.A. COUTINHO DE AZEVEDO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JANETE IZABEL ALVES COUTINHO DE AZEVEDO");
+  }
+  else if (ca1_nome.equals("JENIFER MILENA PELIN")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JENIFER MILENA PELLIN");
+  }
+  else if (ca1_nome.equals("JOANA WILBRICH VOLTILINI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JOANA WILLRICH VOLTOLINI");
+  }
+  else if (ca1_nome.equals("JOELMA DEMONTE TISO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JOELMA DEMONTI TISO");
+  }
+  else if (ca1_nome.equals("JOSEANE CARLA AGOSTINI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JOSEANE CARLA AGOSTINI TAFFNER");
+  }
+  else if (ca1_nome.equals("JOSEANE NOLLI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JOSEANE NOLLI HEIMANN");
+  }
+  else if (ca1_nome.equals("JOSE A. LUCIANO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JOSÉ APARECIDO LUCIANO");
+  }
+  else if (ca1_nome.equals("JULIANE A.D.GUTJAHR") || ca1_nome.equals("JULIANE APARECIDA DALPIAZ GUTJAH")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "JULIANE APARECIDA DALPIAZ GUTJAHR");
+  }
+  else if (ca1_nome.equals("KATYA MUELLER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "KATYA MULLER");
+  }
+  else if (ca1_nome.equals("LENICE L. V. HEINIG")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "LENICE LOCH VOSS HEINIG");
+  }
+  else if (ca1_nome.equals("LILIANE KRIEGER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "LILIANE KRUGER");
+  }
+  else if (ca1_nome.equals("LUCAS  EDUARDO MAUS")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "LUCAS EDUARDO MAUS");
+  }
+  else if (ca1_nome.equals("LUCAS SCHULUETER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "LUCAS SCHLUETER");
+  }
+  else if (ca1_nome.equals("LUIZ HENIQUE KOEPSEL")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "LUIZ HENRIQUE KOEPSEL");
+  }
+  else if (ca1_nome.equals("MAISA MENDES S. PALHA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MAISA MENDES SALES PALHA");
+  }
+  else if (ca1_nome.equals("MARIA APARECIDA ALVES DA COSTA   LAEMMEL")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MARIA APARECIDA ALVES DA COSTA LAEMMEL");
+  }
+  else if (ca1_nome.equals("MARIA TEREZINHA CAMP SPERB")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MARIA TERESINHA CAMPI SPERB");
+  }
+  else if (ca1_nome.equals("MARISA A. PASSAES FERREIRA DE MELO") || ca1_nome.equals("MARISA AP. PASSAES FERREIRA DE MELO") ||
+            ca1_nome.equals("MARISA AP. PASSAES FERREIRO DE MELO")|| ca1_nome.equals("MARISA APARECIDA PASSAES F. DE MELO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MARISA APARECIDA PASSAES FERREIRA DE MELO");
+  }
+  else if (ca1_nome.equals("MAYRA RUBIA GNGWUCH")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MAYRA RUBIA GNEWUCH");
+  }
+  else if (ca1_nome.equals("MAYTE MITELMANN")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MAYTE MITTELMANN");
+  }
+  else if (ca1_nome.equals("MONIQUE V. BONA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MONIQUE VIEIRA BONA");
+  }
+  else if (ca1_nome.equals("NOEMIA FARIA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "NOEMIA FARIAS");
+  }
+  else if (ca1_nome.equals("PATRICIA M. MATEDI") || ca1_nome.equals("PATRICIA MARIA MATEDI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "PATRICIA MARIA MATTEDI");
+  }
+  else if (ca1_nome.equals("PATRICIA PEREIRA KROEMER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "PATRICIA PEREIRA KRAEMER");
+  }
+  else if (ca1_nome.equals("PLINIO AMORIM DE SOUSA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "PLINIO AMORIM DE SOUZA");
+  }
+  else if (ca1_nome.equals("RAFAELA ALESSANDRA SCHNEIDER HINSCHIG")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "RAFAELA ALESSANDRA SCHNEIDER HINSCHING");
+  }
+  else if (ca1_nome.equals("RITA DE CASSIA BONA") || ca1_nome.equals("RITA DE CÁSSIA BONA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "RITA DE CASSIA BONA GOIVINHO");
+  }
+  else if (ca1_nome.equals("ROBERTO VALMOR BRÜHMULLER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ROBERTO VALMOR BRUHMULLER KISNER");
+  }
+  else if (ca1_nome.equals("ROGERIA AP. B. DE LIMA RIBEIRO")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ROGERIA APARECIDA BORGES DE LIMA RIBEIRO");
+  }
+  else if (ca1_nome.equals("ROSE-MARY DALPIAZ CORREA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "ROSE-MARY DALPIAZ CORREA");
+  }
+  else if (ca1_nome.equals("SALVIO A. ZATELLI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "SALVIO ANTONIO ZATELLI");
+  }
+  else if (ca1_nome.equals("TALITA NAZARIO BRISTOT")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "TALITA NAZARIO BRISTOT SILVA");
+  }
+  else if (ca1_nome.equals("TATIANA  PATRICIA TESKE WEEGE")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "TATIANE PATRICIA TESKE WEEGE");
+  }
+  else if (ca1_nome.equals("MORGANA R. BERTELLI SCHLUP")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "MORGANA RAQUEL BERTELLI SCHLUP");
+  }
+  else if (ca1_nome.equals("OLIVIO TAFFNER") || ca1_nome.equals("OLÍVIO TAFNER")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "OLIVIO TAFNER");
+  }
+  else if (ca1_nome.equals("RITA FIAMONCINI VALACANAIA")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "RITA FIAMONCINI VALCANAIA");
+  }
+  else if (ca1_nome.equals("SONIA SIMONE SDRIGOTTI")) {
+    get(Fields.Out, "ca1_nome").setValue(outputRow, "SONIA SIMONE SDRIGOTTI CONTI");
+  }
+    
+  if (ca1_nome.equals("ALFROH POSTAI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_nome.equals("ANA PATRICIA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ANA PAULA VITI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ANDREA MACHADO")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("CRISTIANE ROBERTA BEWIAHN TOMASELI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ELIZETE PISETTA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("FERNANDA CARLINI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ALMIR JOAO LUIZ")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_nome.equals("ADRIANA GIOVANELLA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ANDREIA SHEILA ZATELLI FIAMONCINI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ANDREA FIAMONCINI ROZZA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("CLEIDE APARECIDA NICOLETTI PONTES")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("DEBORA COSTA PIRES")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("EDGNA HUMBELINO")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ELIANE LERCILIA PEREIRA FURTADO")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ELKE LOUISE KEGEL UHLMANN")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("FATIMA DENISE DE MELO PELLIZZARO")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("FERNANDA DALPIAZ HENDGES")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("FERNANDO LUIZ DOS SANTOS")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_nome.equals("GABRIELLEN THAILA ALVES FERREIRA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("JEAN CARLOS MORELL")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_nome.equals("JESSICA NAYARA RICHTER")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("JULIANA CAMPESTRINI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("MARILI MICHELSON")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("MARISA SOFIA BECKER")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("MARLENE GAULKE BATISTA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("NATALINO DOOSE")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_nome.equals("QUELI CRISTINA BONA BUSARELLO")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("PAMELLA BARATIERI SIEGEL")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("RAQUEL ZIMATH HOLER")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("ROSELI DE FATIMA DE ARAGAO")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("SERGI FREDERICO MENGARDA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_nome.equals("SCHANA MARA KREUSCH LARA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("SCHIRLEY PASQUALI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("TATIANA DICKMANN ZUMACH")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("THELMA DE SOUZA")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("TEREZA BEATRIZ BERTOLDI FLORIANI")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("VANESSA CARLA CRISTOFOLINI RADUENZ")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  else if (ca1_nome.equals("VIRGINIA DONNER")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  
+  if (ca1_sexo.equals("M")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "MASCULINO");
+  }
+  else if (ca1_sexo.equals("F")) {
+    get(Fields.Out, "ca1_sexo").setValue(outputRow, "FEMININO");
+  }
+  
+  putRow(data.outputRowMeta, outputRow);
+  
+  return true;
+}</class_source>
+      </definition>
+    </definitions>
+    <fields>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps>
+      <target_step>
+        <step_tag>1</step_tag>
+        <step_name />
+        <step_description />
+      </target_step>
+    </target_steps>
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1056</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Quebra data</name>
+    <type>FieldSplitter</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <splitfield>ca1_dtanas</splitfield>
+    <delimiter>/</delimiter>
+    <enclosure />
+    <fields>
+      <field>
+        <name>mes</name>
+        <id />
+        <idrem>N</idrem>
+        <type>String</type>
+        <format />
+        <group />
+        <decimal />
+        <currency />
+        <length>2</length>
+        <precision>-1</precision>
+        <nullif />
+        <ifnull />
+        <trimtype>both</trimtype>
+      </field>
+      <field>
+        <name>dia</name>
+        <id />
+        <idrem>N</idrem>
+        <type>String</type>
+        <format />
+        <group />
+        <decimal />
+        <currency />
+        <length>2</length>
+        <precision>-1</precision>
+        <nullif />
+        <ifnull />
+        <trimtype>both</trimtype>
+      </field>
+      <field>
+        <name>ano</name>
+        <id />
+        <idrem>N</idrem>
+        <type>String</type>
+        <format />
+        <group />
+        <decimal />
+        <currency />
+        <length>4</length>
+        <precision>-1</precision>
+        <nullif />
+        <ifnull />
+        <trimtype>both</trimtype>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registros únicos</name>
+    <type>Unique</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field />
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description />
+    <fields>
+      <field>
+        <name>ca1_nome</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Remove campos</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>ca1_codigo</name>
+      </remove>
+      <remove>
+        <name>ca1_endere</name>
+      </remove>
+      <remove>
+        <name>ca1_bairro</name>
+      </remove>
+      <remove>
+        <name>ca1_cidade</name>
+      </remove>
+      <remove>
+        <name>ca1_estado</name>
+      </remove>
+      <remove>
+        <name>ca1_formac</name>
+      </remove>
+      <remove>
+        <name>ca1_curso</name>
+      </remove>
+      <remove>
+        <name>ca1_pestra</name>
+      </remove>
+      <remove>
+        <name>ca1_usanm1</name>
+      </remove>
+      <remove>
+        <name>ca1_sommed</name>
+      </remove>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Salva funcionários</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL-Postgres</connection>
+    <schema />
+    <table>conv_funcionarios_dw</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id</column_name>
+        <stream_name>id</stream_name>
+      </field>
+      <field>
+        <column_name>nome</column_name>
+        <stream_name>ca1_nome</stream_name>
+      </field>
+      <field>
+        <column_name>data_nascimento</column_name>
+        <stream_name>ca1_dtanas</stream_name>
+      </field>
+      <field>
+        <column_name>sexo</column_name>
+        <stream_name>ca1_sexo</stream_name>
+      </field>
+      <field>
+        <column_name>estado_civil</column_name>
+        <stream_name>estado_civil</stream_name>
+      </field>
+      <field>
+        <column_name>rg</column_name>
+        <stream_name>rg</stream_name>
+      </field>
+      <field>
+        <column_name>orgao_emissor_rg</column_name>
+        <stream_name>orgao_emissor_rg</stream_name>
+      </field>
+      <field>
+        <column_name>cpf</column_name>
+        <stream_name>cpf</stream_name>
+      </field>
+      <field>
+        <column_name>endereco</column_name>
+        <stream_name>endereco</stream_name>
+      </field>
+      <field>
+        <column_name>bairro</column_name>
+        <stream_name>bairro</stream_name>
+      </field>
+      <field>
+        <column_name>municipio</column_name>
+        <stream_name>cidade</stream_name>
+      </field>
+      <field>
+        <column_name>telefone</column_name>
+        <stream_name>ca1_nrotel</stream_name>
+      </field>
+      <field>
+        <column_name>celular</column_name>
+        <stream_name>ca1_nrocel</stream_name>
+      </field>
+      <field>
+        <column_name>email</column_name>
+        <stream_name>ca1_e_mail</stream_name>
+      </field>
+      <field>
+        <column_name>cep</column_name>
+        <stream_name>ca1_codcep</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sequencial</name>
+    <type>Sequence</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection />
+    <schema />
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name>seq</counter_name>
+    <start_at>373</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seta maiúsculo</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>608</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seleciona campos</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ca1_nome</name>
+        <rename>ca1_nome</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+      <meta>
+        <name>ca1_codcep</name>
+        <rename>ca1_codcep</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+      <meta>
+        <name>ca1_nrotel</name>
+        <rename>ca1_nrotel</rename>
+        <type>String</type>
+        <length>15</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+      <meta>
+        <name>ca1_nrocel</name>
+        <rename>ca1_nrocel</rename>
+        <type>String</type>
+        <length>15</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+      <meta>
+        <name>ca1_e_mail</name>
+        <rename>ca1_e_mail</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+      <meta>
+        <name>ca1_sexo</name>
+        <rename>ca1_sexo</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+      <meta>
+        <name>ca1_dtanas</name>
+        <rename>ca1_dtanas</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ajusta campos</name>
+    <type>ReplaceString</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÁÀÂÃ]</replace_string>
+        <replace_by_string>A</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÉÈÊË]</replace_string>
+        <replace_by_string>E</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÍÌÎ]</replace_string>
+        <replace_by_string>I</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÓÒÔÕÖ]</replace_string>
+        <replace_by_string>O</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[ÚÙÛÜ]</replace_string>
+        <replace_by_string>U</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[Ç]</replace_string>
+        <replace_by_string>C</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[^a-zA-Z \-]</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nome</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[£ÆƑÃŠ‡‰�ªº¢¡`´“]</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nrotel</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string>( )</replace_string>
+        <replace_by_string>47</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nrotel</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string>(047)</replace_string>
+        <replace_by_string>47</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nrotel</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[^0-9]</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nrocel</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string>( )</replace_string>
+        <replace_by_string>47</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nrocel</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string>(047)</replace_string>
+        <replace_by_string>47</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_nrocel</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[^0-9]</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_codcep</in_stream_name>
+        <out_stream_name />
+        <use_regex>yes</use_regex>
+        <replace_string>[^0-9]</replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>ca1_e_mail</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string> </replace_string>
+        <replace_by_string />
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Verifica cadastro</name>
+    <type>DBLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL-Postgres</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema />
+      <table>conv_funcionarios_dw</table>
+      <orderby />
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ca1_nome</name>
+        <field>nome</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>id</name>
+        <rename>id_funcionario</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>736</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Já inserido?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Descarta</send_true_to>
+    <send_false_to>Obtém outros dados</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>id_funcionario</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Descarta</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seta orgão emissor rg</name>
+    <type>ScriptValueMod</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+var orgao_emissor_rg = 10;
+
+// Valida RG
+if (rg == null || (rg || '') == '') {
+  orgao_emissor_rg = null;
+}</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>orgao_emissor_rg</name>
+        <rename>orgao_emissor_rg</rename>
+        <type>Integer</type>
+        <length>2</length>
+        <precision>0</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
